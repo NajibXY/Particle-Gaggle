@@ -47,7 +47,7 @@ int main()
             {
                 particles[i].drawParticle();
             }
-            DrawFPS(10, 10);
+            DrawFPS(WIDTH-100, 10);
         EndDrawing();
     }
 
