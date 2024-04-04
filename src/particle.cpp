@@ -16,8 +16,8 @@ Particle::Particle(int width, int height)
     position.y = GetRandomValue(0, height-1);
     velocity.x = GetRandomValue(-100, 100) / 100.f;
     velocity.y = GetRandomValue(-100, 100) / 100.f;
-    color = (Color){(unsigned char)GetRandomValue(0,255),(unsigned char)GetRandomValue(0,255),(unsigned char)GetRandomValue(0,255),255};
-    // color = (Color){0,0,0,100};
+    // color = (Color){(unsigned char)GetRandomValue(0,255),(unsigned char)GetRandomValue(0,255),(unsigned char)GetRandomValue(0,255),255};
+    color = GOLD;
 }
 
 float Particle::getDistance(Vector2 otherPosition) {
