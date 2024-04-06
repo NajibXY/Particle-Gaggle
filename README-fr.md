@@ -24,7 +24,7 @@
 - Lors des déplacement, une friction s'applique sur les particules.
 - Le vecteur vitesse des particules demeure après relâchement du clic et s'estompe avec les applications successives de la friction.
   
-# 4. Améliorations possibles
+## 4. Améliorations possibles
 
 - Collisions entre les particules (à ajouter à la friction appliquée par la simulatioon)
 - Accélération des particules proches augmentée par rapport à celles éloignées
