@@ -48,4 +48,3 @@
 - Ouvrir le projet dans VS Code via le fichier main.code-workspace
 - F5 pour compiler et exécuter
 - A partir de là vous pouvez effectuer toutes les modifications que vous souhaitez sur le fork du projet
-- 
