@@ -3,6 +3,7 @@
 #include <math.h>
 #include "particle.hpp"
 
+// Set the position, velocity and color of the particle
 Particle::Particle(Vector2 p, Vector2 v, Color c)
 {
     position = p;
@@ -10,16 +11,17 @@ Particle::Particle(Vector2 p, Vector2 v, Color c)
     color = c;
 }
 
+// Randomize the position and velocity of the particle
 Particle::Particle(int width, int height)
 {
     position.x = GetRandomValue(0, width-1);
     position.y = GetRandomValue(0, height-1);
     velocity.x = GetRandomValue(-100, 100) / 100.f;
     velocity.y = GetRandomValue(-100, 100) / 100.f;
-    // color = (Color){(unsigned char)GetRandomValue(0,255),(unsigned char)GetRandomValue(0,255),(unsigned char)GetRandomValue(0,255),255};
     color = GOLD;
 }
 
+// Calculate the distance between the particle and another point
 float Particle::getDistance(Vector2 otherPosition) {
     const float dx = position.x - otherPosition.x;
     const float dy = position.y - otherPosition.y;
@@ -27,6 +29,7 @@ float Particle::getDistance(Vector2 otherPosition) {
     return sqrt((dx*dx) + (dy*dy));
 }
 
+// Returns a vector that points from the particle to the other position
 Vector2 Particle::getDistanceFromOtherPoint(Vector2 otherPosition) {
     float distance = getDistance(otherPosition);
     if (distance == 0.0f) distance = 1;
@@ -36,7 +39,9 @@ Vector2 Particle::getDistanceFromOtherPoint(Vector2 otherPosition) {
     return normal;
 }
 
+// Move the particle
 void Particle::moveParticle(int width, int height) {
+    // Move the particle
     position.x += velocity.x;
     position.y += velocity.y;
 
@@ -55,10 +60,12 @@ void Particle::moveParticle(int width, int height) {
     }
 }
 
+// Draw the particle
 void Particle::drawParticle() {
     DrawPixelV(position, color);
 }
 
+// Attract the particle to a position with a certain rate
 void Particle::attractParticle(Vector2 positionToAttract, float attractionRate)
 {
     float distance = fmax(getDistance(positionToAttract),0.5);
@@ -68,6 +75,7 @@ void Particle::attractParticle(Vector2 positionToAttract, float attractionRate)
     velocity.y -= normal.y/distance;
 }
 
+// Apply friction to the particle
 void Particle::friction(float frictionRate) {
     velocity.x *= frictionRate;
     velocity.y *= frictionRate;

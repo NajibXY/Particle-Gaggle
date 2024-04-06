@@ -13,9 +13,11 @@ const float FRICTION_RATE = 0.99;
 
 int main()
 {
+    // Initialize the particles array
     SetRandomSeed(1);
     Particle *particles = (Particle*)malloc(PARTICLE_NUMBER * sizeof(Particle));
 
+    // Initialize the particles with random positions and velocities
     for (long int i = 0; i < PARTICLE_NUMBER; i++)
     {
         particles[i] = Particle(WIDTH, HEIGHT);
@@ -28,13 +30,15 @@ int main()
     // Game loop
     while (!WindowShouldClose())
     {   
-        
+        // Update the particles position
         Vector2 mousePosition = (Vector2){(float)GetMouseX(), (float)GetMouseY()};
         for (long int i = 0; i < PARTICLE_NUMBER; i++)
         {   
+            // Attract the particles to the mouse
             if (IsMouseButtonDown(MOUSE_LEFT_BUTTON)) {
                 particles[i].attractParticle(mousePosition, ATTRACTION_RATE);
             }
+            // Apply friction to the particles to slow them down over time
             particles[i].friction(FRICTION_RATE);
             particles[i].moveParticle(WIDTH, HEIGHT);  
         }
