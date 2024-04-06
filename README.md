@@ -25,7 +25,7 @@
 - During movement, friction is applied to the particles.
 - The velocity vector of the particles remains after releasing the click and fades with successive applications of friction.
   
-# 4. Possible Improvements
+## 4. Possible Improvements
 
 - Collisions between particles (to be added to the friction currently applied by the simulation).
 - Acceleration of nearby particles increased compared to those further away, for more "black hole-y" realism.
