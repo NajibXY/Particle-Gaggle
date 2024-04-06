@@ -9,7 +9,7 @@
 - Dans l'optique d'en découvrir encore plus sur les possibilités de la bibliothèque Raylib, j'ai réalisé ce petit simulateur de particules où le joueur peut cliquer avec le pointeur de sa souris afin d'attirer les particules générés vers le pointeur.
 - Les particules ont également une vélocité qu'elles conservent même quand le clic de la souris est relâché.
 
-</br> </br>
+</br> </br></br> </br></br> </br>
 ## 2. Technologies utilisées
 
 - C++14
