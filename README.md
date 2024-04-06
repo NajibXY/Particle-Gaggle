@@ -1,6 +1,0 @@
-# TODO
-
-# Upgrades
-
-- Customization
-- Collision
