@@ -10,7 +10,7 @@
 - In order to discover more about the possibilities Raylib's C++ library, I created this small particle simulator where the player can click with their mouse to attract the generated particles towards the pointer.
 - The particles also have a velocity that is maintained even when the mouse click is released.
 
-</br> </br>
+</br> </br></br> </br></br> </br>
 ## 2. Technologies Used
 
 - C++14
