@@ -31,7 +31,9 @@
 - Acceleration of nearby particles increased compared to those further away, for more "black hole-y" realism.
 - Customization of the applied attraction.
 - Other fun functions to apply to the particles: pulsation, repulsion, etc.
-  
+- Try a 3D GPU oriented version (such as https://github.com/arceryz/raylib-gpu-particles)
+- [...]   
+
 ## 5. Running the Project
 
 - If you simply want to have fun with the simulation, you can download the .exe file from the main repository: [main.exe](https://github.com/NajibXY/Particle-Gaggle-using-CPP-and-Raylib/blob/master/main.exe)
