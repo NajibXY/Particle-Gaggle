@@ -30,6 +30,8 @@
 - Accélération des particules proches augmentée par rapport à celles éloignées
 - Customisation de l'attraction appliquée
 - D'autres fonctions drôles à appliquer sur les particules : pulsation, repoussement, etc.
+- Essayer une version 3D axée sur l'utilisation du GPU (comme le fait ce projet https://github.com/arceryz/raylib-gpu-particles)
+- [...]   
   
 ## 5. Exécuter le projet
 
